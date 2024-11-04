@@ -1,0 +1,24 @@
+.menuItem {
+  display: inline-flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  background-color: var(--main-color);
+  cursor: pointer;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  border: none;
+
+  &:hover {
+    background-color: #283340;
+  }
+}
+
+.menuItem__label {
+  font-size: 18px;
+  padding-left: 5px;
+  color: white;
+}
+

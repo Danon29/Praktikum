@@ -1,0 +1,31 @@
+.icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-filled {
+    background: linear-gradient(-45deg, #9372ee, #4e4adc, #338AFF, #56b3ab);
+    background-size: 600%;
+    animation: primaryAnimation 10s linear infinite;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+
+    &:hover {
+    animation: none;
+  }
+  }
+}
+@keyframes primaryAnimation{
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}

@@ -1,0 +1,9 @@
+<button class="button button-{{type}}">
+    {{#if (contains type "icon")}}
+        {{> SvgIcon iconType=type}}
+    {{else if (eq type "primary")}}
+        <span>{{label}}</span>
+    {{else}}
+        {{label}}
+    {{/if}}
+</button>

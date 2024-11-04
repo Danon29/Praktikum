@@ -1,0 +1,51 @@
+.input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 38px;
+  position: relative;
+
+  &__label {
+    transform: translateY(-28px);
+    font-size: 20px;
+    padding-left: 6px;
+    user-select: none;
+    transition: all 0.2s ease;
+    color: var(--text-color);
+  }
+
+  &__element {
+    width: 100%;
+    padding: 6px 0;
+    border: none;
+    border-bottom: 2px solid #fff;
+    outline: none;
+    font-size: 18px;
+    transition: border-color 0.5s ease;
+    background-color: var(--main-color);
+    color: var(--text-color);
+  }
+
+  &:focus {
+    border-color: var(--primary);
+  }
+
+  &__element:not(:placeholder-shown) + &__label,
+  &__element:focus + &__label {
+    transform: translate(-5px ,-42px);
+    color: var(--primary);
+    font-size: 12px;
+  }
+
+  &__error {
+    color: rgba(204, 62, 19, 0.78);
+    font-size: 12px;
+    padding-bottom: 2px;
+    transform: translateY(-20px);
+    position: absolute;
+    top: 57px
+  }
+}
+
+
+
