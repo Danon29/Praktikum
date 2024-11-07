@@ -1,0 +1,7 @@
+<div class="chatList">
+    {{#each chats }}
+        <div class="chatItem__wrapper">
+            {{> ChatItem name=this.name time=this.time text=this.text selected=this.selected isOwnMessage=this.isOwnMessage count=this.count }}
+        </div>
+    {{/each}}
+</div>

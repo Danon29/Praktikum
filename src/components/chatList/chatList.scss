@@ -1,0 +1,18 @@
+.chatList {
+  height: 100vh;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+}
+
+
+.chatItem__wrapper {
+  border-bottom: 1px solid #5e5b5b;
+
+  //&:first-child {
+  //  border-top: 1px solid #5e5b5b;
+  //}
+}

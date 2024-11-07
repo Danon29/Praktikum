@@ -1,6 +1,6 @@
 <button class="button button-{{type}}">
     {{#if (contains type "icon")}}
-        {{> SvgIcon iconType=type}}
+        {{> SvgIcon iconType=type src=source }}
     {{else if (eq type "primary")}}
         <span>{{label}}</span>
     {{else}}

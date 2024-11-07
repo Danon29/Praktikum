@@ -29,20 +29,161 @@ const pages = {
             }
         ]
     } ],
-    'test': [ Pages.TestPage, {
-        menuList: [{
-            label: "Фото или видео",
-            src: '/public/icons/Union.svg'
-        },
+    'main': [ Pages.MainPage, {
+        chats: [
             {
-                label: "Файл",
-                src: '/public/icons/file.svg'
+                name: "John Doe",
+                text: "Hello there",
+                selected: false, // только один объект в массиве будет иметь true
+                count: 10,
+                isOwnMessage: true,
+                time: "14:25"
             },
             {
-                label: "Локация",
-                src: '/public/icons/location.svg'
-            }]
-    } ],
+                name: "Jane Smith",
+                text: "How are you?",
+                selected: false,
+                count: 2,
+                isOwnMessage: false,
+                time: "14:30"
+            },
+            {
+                name: "John Doe",
+                text: "I'm good, thanks2ыф вафывфasdfa sdafasdыафыв13123!",
+                selected: false,
+                count: 3,
+                isOwnMessage: true,
+                time: "14:35"
+            },
+            {
+                name: "Jane Smith",
+                text: "Great to hear!",
+                selected: false,
+                count: 1,
+                isOwnMessage: false,
+                time: "14:40"
+            },{
+                name: "Jane Smith",
+                text: "How are you?",
+                selected: false,
+                isOwnMessage: false,
+                time: "14:30"
+            },
+            {
+                name: "John Doe",
+                text: "I'm good, thanks2ыф вафывфasdfa sdafasdыафыв13123!",
+                selected: false,
+                isOwnMessage: true,
+                time: "14:35"
+            },
+            {
+                name: "Jane Smith",
+                text: "How are you?",
+                selected: false,
+                isOwnMessage: false,
+                time: "14:30"
+            },
+            {
+                name: "John Doe",
+                text: "I'm good, thanks2ыф вафывфasdfa sdafasdыафыв13123!",
+                selected: false,
+                count: 3,
+                isOwnMessage: true,
+                time: "14:35"
+            },
+            {
+                name: "Jane Smith",
+                text: "How are you?",
+                selected: false,
+                isOwnMessage: false,
+                time: "14:30"
+            },
+            {
+                name: "John Doe",
+                text: "I'm good, thanks2ыф вафывфasdfa sdafasdыафыв13123!",
+                selected: false,
+                isOwnMessage: true,
+                time: "14:35"
+            },
+            {
+                name: "Jane Smith",
+                text: "How are you?",
+                selected: false,
+                count: 2,
+                isOwnMessage: false,
+                time: "14:30"
+            },
+            {
+                name: "John Doe",
+                text: "I'm good, thanks2ыф вафывфasdfa sdafasdыафыв13123!",
+                selected: false,
+                count: 3,
+                isOwnMessage: true,
+                time: "14:35"
+            },
+            {
+                name: "Jane Smith",
+                text: "How are you?",
+                selected: false,
+                count: 2,
+                isOwnMessage: false,
+                time: "14:30"
+            },
+            {
+                name: "John Doe",
+                text: "I'm good, thanks2ыф вафывфasdfa sdafasdыафыв13123!",
+                selected: false,
+                isOwnMessage: true,
+                time: "14:35"
+            },
+            {
+                name: "Jane Smith",
+                text: "How are you?",
+                selected: false,
+                isOwnMessage: false,
+                time: "14:30"
+            },
+            {
+                name: "John Doe",
+                text: "I'm good, thanks2ыф вафывфasdfa sdafasdыафыв13123!",
+                selected: false,
+                count: 3,
+                isOwnMessage: true,
+                time: "14:35"
+            },
+            {
+                name: "Jane Smith",
+                text: "How are you?",
+                selected: false,
+                count: 2,
+                isOwnMessage: false,
+                time: "14:30"
+            },
+            {
+                name: "John Doe",
+                text: "I'm good, thanks2ыф вафывфasdfa sdafasdыафыв13123!",
+                selected: false,
+                count: 3,
+                isOwnMessage: true,
+                time: "14:35"
+            },
+        ]
+    }  ],
+
+    // dataForMenu: {
+    //     menuList: [{
+    //         label: "Фото или видео",
+    //         src: '/public/icons/Union.svg'
+    //     },
+    //         {
+    //             label: "Файл",
+    //             src: '/public/icons/file.svg'
+    //         },
+    //         {
+    //             label: "Локация",
+    //             src: '/public/icons/location.svg'
+    //         }]
+    // }
     // 'list': [ Pages.ListPage, {
     //     cats: [
     //         {name: 'cat-1', avatar: cat1},
@@ -52,6 +193,7 @@ const pages = {
     //     showDialog: true
     // }],
     'nav': [ Pages.NavigatePage ],
+    'test': [Pages.TestPage],
     'register': [ Pages.RegisterPage, {
         title: 'Регистрация',
         inputs: [

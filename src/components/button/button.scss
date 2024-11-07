@@ -51,6 +51,9 @@
         }
     }
 
+    &-icon, &-icon-filled {
+        width: auto;
+    }
 
     &-primary{
         background: linear-gradient(-45deg, #9372ee, #4e4adc, #338AFF, #56b3ab);

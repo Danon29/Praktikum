@@ -1,0 +1,18 @@
+<div class="mainPage">
+    <div class="leftSide">
+            <div class="leftSide__header">
+                <div class="leftSide__header-button"></div>
+                <div class="leftSide__search">
+                    {{> TextField type="search" placeholder="Поиск" }}
+                </div>
+            </div>
+                {{> ChatList }}
+    </div>
+    <div class="rightSide">
+        <div class="rightSide__header"></div>
+        <div class="rightSide__content"></div>
+        <div class="rightSide__footer">
+            {{> TextField type="message" placeholder="Сообщение"}}
+        </div>
+    </div>
+</div>
