@@ -5,45 +5,85 @@
   height: 38px;
   position: relative;
 
-  &__label {
-    transform: translateY(-28px);
-    font-size: 20px;
-    padding-left: 6px;
-    user-select: none;
-    transition: all 0.2s ease;
-    color: var(--text-color);
-  }
 
-  &__element {
-    width: 100%;
-    padding: 6px 0;
+  .input__element {
+    background-color: var(--main-color);
+    outline: none;
     border: none;
     border-bottom: 2px solid #fff;
-    outline: none;
-    font-size: 18px;
-    transition: border-color 0.5s ease;
-    background-color: var(--main-color);
-    color: var(--text-color);
   }
 
-  &:focus {
-    border-color: var(--primary);
+  &__default {
+    .input__label {
+      transform: translateY(-28px);
+      font-size: 20px;
+      padding-left: 6px;
+      user-select: none;
+      transition: all 0.2s ease;
+      color: var(--text-color);
+    }
+
+    .input__element {
+      width: 100%;
+      padding: 6px 0;
+      font-size: 18px;
+      transition: border-color 0.5s ease;
+      color: var(--text-color);
+    }
+
+    .input:focus {
+      border-color: var(--primary);
+    }
+
+    .input__element:not(:placeholder-shown) + .input__label,
+    .input__element:focus + .input__label {
+      transform: translate(-5px ,-42px);
+      color: var(--primary);
+      font-size: 12px;
+    }
+
+    .input__error {
+      color: rgba(204, 62, 19, 0.78);
+      font-size: 12px;
+      padding-bottom: 2px;
+      transform: translateY(-20px);
+      position: absolute;
+      top: 57px
+    }
   }
 
-  &__element:not(:placeholder-shown) + &__label,
-  &__element:focus + &__label {
-    transform: translate(-5px ,-42px);
-    color: var(--primary);
-    font-size: 12px;
-  }
 
-  &__error {
-    color: rgba(204, 62, 19, 0.78);
-    font-size: 12px;
-    padding-bottom: 2px;
-    transform: translateY(-20px);
-    position: absolute;
-    top: 57px
+  &_userPage {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 4px;
+    border-bottom: none;
+    border-bottom: 2px solid #fff;
+    min-width: 30rem;
+
+    .input__label {
+      font-weight: bold;
+      color: #878787;
+      transform: none;
+      padding-top: 1rem;
+      font-size: 1.5rem;
+    }
+
+    .input__element {
+      text-align: right;
+      color: #cac7c7;
+      font-size: 1rem;
+      border-bottom: none;
+      padding-top: 0.5rem;
+    }
+
+    &__element:not(:placeholder-shown) + &__label,
+    &__element:focus + &__label {
+      transform: none;
+      color: var(--primary);
+      font-size: 12px;
+    }
   }
 }
 

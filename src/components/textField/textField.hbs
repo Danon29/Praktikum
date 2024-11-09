@@ -1,9 +1,9 @@
 <form class="{{#if (eq type "search") }}searchField{{else}}messageField{{/if}}">
     {{#if (eq type "search") }}
-        <button class="textField__iconButton">
+        <button >
             <img src="/public/icons/search.svg" alt="">
         </button>
-        <input type="search" class="textField__input" placeholder="{{placeholder}}">
+        <input type="search"  placeholder="{{placeholder}}">
     {{else}}
         {{> Button type="icon" source="/public/icons/clip.svg"}}
         <textarea name="message"  rows="1" placeholder="{{placeholder}}"></textarea>

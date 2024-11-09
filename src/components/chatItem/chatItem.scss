@@ -1,4 +1,4 @@
-.chatItem {
+.chat-item {
   display: flex;
   align-items: center;
   padding: 10px;
@@ -28,20 +28,20 @@
     position: relative;
     margin-bottom: 5px;
 
-    .chatItem__name {
+    .chat-item__name {
       font-weight: bold;
       color: #fff
     }
 
-    .chatItem__infoPart {
+    .chat-item__infoPart {
 
-      .chatItem__time {
+      .chat-item__time {
         font-size: 12px;
         color: #7976aa;
         margin-left: 10px;
       }
 
-      .chatItem__deleteBtn {
+      .chat-item__deleteBtn {
         display: none;
         position: relative;
         width: 10px;
@@ -52,7 +52,7 @@
         margin-left: 10px;
 
 
-        .chatItem__deleteLine {
+        .chat-item__deleteLine {
           position: absolute;
           top: 50%;
           left: 0;
@@ -70,7 +70,7 @@
           }
         }
 
-        &:hover .chatItem__deleteLine {
+        &:hover .chat-item__deleteLine {
           background-color: #bcbbbb;
         }
       }
@@ -78,7 +78,7 @@
 
   }
 
-  &:hover .chatItem__deleteBtn {
+  &:hover .chat-item__deleteBtn {
     display: inline-flex;
   }
 
@@ -88,11 +88,11 @@
     justify-content: space-between;
     margin-top: 5px;
 
-    .chatItem__bodyText {
+    .chat-item__bodyText {
       display: flex;
       width: 100%;
 
-      .chatItem__text {
+      .chat-item__text {
         color: #ffffff;
         overflow: hidden;
         max-width: 100%;
@@ -103,7 +103,7 @@
       }
 
 
-      .chatItem__ownPrefix {
+      .chat-item__ownPrefix {
         font-size: 16px;
         font-weight: bold;
         color: #a5a0ea;
@@ -114,7 +114,7 @@
 
 
 
-    .chatITem__unreadCount {
+    .chat-item__unreadCount {
       background-color: #175398;
       color: white;
       font-size: 14px;
@@ -130,6 +130,6 @@
 
 }
 
-.chatItem:hover, .selected {
+.chat-item:hover, .selected {
   background-color: #425267FF;
 }

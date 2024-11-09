@@ -1,4 +1,4 @@
-.menuItem {
+.menu-item {
   display: inline-flex;
   justify-content: flex-start;
   flex-direction: row;
@@ -16,9 +16,10 @@
   }
 }
 
-.menuItem__label {
+.menu-item__label {
   font-size: 18px;
   padding-left: 5px;
   color: white;
+  white-space: nowrap;
 }
 

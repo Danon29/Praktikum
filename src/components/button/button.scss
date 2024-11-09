@@ -1,21 +1,25 @@
 .button {
     background-color: initial;
     font-weight: 700;
-    width: 100%;
     cursor: pointer;
     user-select: none;
     -webkit-user-select: none;
     border: none;
     max-height: 72px;
 
-    &-link {
+    &_link {
         color: #4e4adc;
         font-size: 17px;
         text-align: center;
         width: auto;
+
+        &:hover {
+            color: #7472df;
+        }
+
     }
 
-    &-primary {
+    &_primary {
         align-items: center;
         display: flex;
         font-size: 20px;
@@ -28,6 +32,7 @@
         text-decoration: none;
         border-radius: 20px;
         max-height: 64px;
+        width: 100%;
 
         &:active,
         &:hover {
@@ -51,11 +56,11 @@
         }
     }
 
-    &-icon, &-icon-filled {
+    &_icon, &-icon-filled {
         width: auto;
     }
 
-    &-primary{
+    &_primary{
         background: linear-gradient(-45deg, #9372ee, #4e4adc, #338AFF, #56b3ab);
         background-size: 600%;
         animation: primaryAnimation 10s linear infinite;
@@ -63,10 +68,30 @@
         box-sizing: border-box;
     }
 
-    &-icon-filled:hover {
+    &_icon-filled:hover {
         animation: none;
     }
+
+
+
+    &_textColor {
+        &_cancel {
+            color: red;
+        }
+
+        &:hover {
+            color: white;
+        }
+    }
+
+    &_fontSize {
+        &_medium {
+            font-size: 30px;
+        }
+    }
+
 }
+
 
 
 

@@ -3,7 +3,7 @@
         <form class="form__element">
             <div class="form__inputs">
                 {{#each inputs}}
-                    {{> Input label=this.label type=this.email errorMessage=this.errorMessage  }}
+                    {{> Input label=this.label errorMessage=this.errorMessage type=this.type  }}
                 {{/each}}
             </div>
             <div class="form__buttons">

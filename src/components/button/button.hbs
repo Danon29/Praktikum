@@ -1,4 +1,4 @@
-<button class="button button-{{type}}">
+<button class="button button_{{type}} {{#if textColor}}button_textColor_{{textColor}} {{/if}}{{#if fontSize}}button_fontSize_{{fontSize}}{{/if}}">
     {{#if (contains type "icon")}}
         {{> SvgIcon iconType=type src=source }}
     {{else if (eq type "primary")}}
